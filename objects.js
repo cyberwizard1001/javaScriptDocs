@@ -46,3 +46,71 @@ var lookup = {
 result = lookup[val]         //where val is passed and usually would be the switch variable
 
 
+//Array of objects 
+var myMusic = [
+    {
+      "artist": "Billy Joel",
+      "title": "Piano Man",
+      "release_year": 1973,
+      "formats": [
+        "CD",
+        "8T",
+        "LP"
+      ],
+      "gold": true
+    },
+    {
+      "artist": "Nirmal K",
+      "title": "Song",
+      "release_year": 2020,
+      "formats":[
+        "casette",
+        "digital"
+      ],
+      "gold": true
+    }
+  ];
+
+
+  //Accessing array elements inside objects 
+  var myStorage = {
+    "car": {
+      "inside": {
+        "glove box": "maps",
+        "passenger seat": "crumbs"
+       },
+      "outside": {
+        "trunk": "jack"
+      }
+    }
+  };
+  
+  var gloveBoxContents = myStorage["car"].inside["glove box"];
+
+
+  //Using objects as arrays and identifying array elements 
+  var myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+      ]
+    },
+    {
+      type: "trees",
+      list: [
+        "fir",
+        "pine",
+        "birch"
+      ]
+    }
+  ];
+  
+  var secondTree = "";
+  
+  secondTree = myPlants[1].list[1];
+
+
+  
